@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('../imagens/fundo-login.jpg');
+    background-size: 100%;
+    color: rgb(0, 0, 0);
+}
+
+#caixa-login {
+    height: 400px;
+    width: 600px;
+    margin: 100px auto 0px;
+    text-align: left;
+    border: #ccc solid 2px;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 18px;
+    color: #363636;
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 20px 18px 0 0;
+}
+
+hr {
+    margin: 0 0 20px;
+}
+
+input {
+    height: 30px;
+    width: 380px;
+    margin: 10px 0;
+    background-color: rgba(220, 220, 220, 0.5);
+    text-align: center;
+    font-size: 20px;
+}
+
+input[value="Acessar"] {
+    height: 50px;
+    width: 180px;
+    border-radius: 9px;
+    display: block;
+    margin: 20px auto;
+    background-color: #D3D3D3;
+}
+
+#caixa-dentro {
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 20px;
+}
+
+a {
+    height: 38px;
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
