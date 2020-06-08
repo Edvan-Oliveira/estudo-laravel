@@ -14,16 +14,16 @@ class ClienteController extends Controller
     public function cadastro() {
         return view('cadastro');
     }
-
+    //
     public function cadastrar(Request $request) {
         $request->validate([
-            'nome'              => 'required',
-            'sobrenome'         => 'required',
-            'cpf'               => 'required',
-            'email'             => 'required',
-            'telefone'          => 'required',
-            'dataNascimento'    => 'required',
-            'senha'             => 'required',
+            'nome'              => 'required|max:20',
+            'sobrenome'         => 'required|max:20',
+            'cpf'               => 'required|max:14',
+            'email'             => 'required|max:30|email',
+            'telefone'          => 'required|max:16',
+            'dataNascimento'    => 'required|max:10',
+            'senha'             => 'required|max:15',
             'senhaConf'         => 'required|same:senha'
         ]);
         
@@ -36,8 +36,8 @@ class ClienteController extends Controller
 
     public function logar(Request $request) {
         $request->validate([
-            'email' => 'required',
-            'senha' => 'required'
+            'email' => 'required|max:30|email',
+            'senha' => 'required|max:15'
         ]);
 
         if($request->email == 'edvan.oliveiract@gmail.com' && $request->senha == '123456')

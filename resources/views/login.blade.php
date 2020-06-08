@@ -14,10 +14,10 @@
             <form action="{{url('cliente/logar')}}" method="POST">
                 @csrf
                 <label for="email">E-mail</label><br>
-                <input type="email" id="email" name="email" placeholder="seuendereco@email.com" required autofocus><br>
+                <input type="email" id="email" name="email" placeholder="seuendereco@email.com" required maxlength="30" autofocus><br>
                 
                 <label for="senha">Senha</label><br>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required maxlength="15"><br>
 
                 <input type="submit" value="Acessar">
             </form>
