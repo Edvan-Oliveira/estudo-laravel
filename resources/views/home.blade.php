@@ -16,10 +16,17 @@
                 <input type="submit" value="pesquisar">
             </form>
 
-            <div id="login-cadastrar">
-                <a href="{{url('cliente/cadastro')}}">Cadastre-se</a>
-                <a href="{{url('cliente/login')}}">Acessar</a>
-            </div>
+            @if(session('nome') == null)
+                <div id="login-cadastrar">
+                    <a href="{{url('cliente/cadastro')}}">Cadastre-se</a>
+                    <a href="{{url('cliente/login')}}">Acessar</a>
+                </div>
+            @else
+                <div id="usuario">
+                    <a href="{{url('cliente/sair')}}"><img id="sairImg" src="{{url('imagens/sair.png')}}" height="28px"></a>
+                    <a id="sair" href="{{url('cliente/sair')}}">Sair</a>
+                </div>
+            @endif
 
             <nav>
                 <ul>
@@ -33,6 +40,11 @@
     </header>
 
     <div class="container">
+
+        @if(session('nome'))
+            <h3>Seja muito bem vindo {{session('nome')}}, tenha ótimas compras!</h3>
+        @endif
+        
         <section id="camisas-masculinas" >
             <h2>Destaques Masculinas</h2>
             <hr>

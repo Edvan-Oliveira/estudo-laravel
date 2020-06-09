@@ -14,7 +14,7 @@ class ClienteController extends Controller
     public function cadastro() {
         return view('cadastro');
     }
-    //
+    
     public function cadastrar(Request $request) {
         $request->validate([
             'nome'              => 'required|max:20',
@@ -40,8 +40,15 @@ class ClienteController extends Controller
             'senha' => 'required|max:15'
         ]);
 
-        if($request->email == 'edvan.oliveiract@gmail.com' && $request->senha == '123456')
+        if($request->email == 'edvan.oliveiract@gmail.com' && $request->senha == '123456'){
+            session(['nome' => 'Edvan', 'id' => 1]);
             return redirect()->route('home');
+        }
         return redirect()->back();
+    }
+
+    public function sair(Request $request) {
+        $request->session()->flush();
+        return redirect()->route('cliente.login');
     }
 }

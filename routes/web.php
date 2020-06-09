@@ -9,4 +9,5 @@ Route::group(['prefix' => '/cliente'], function () {
     Route::post('/cadastrar', 'ClienteController@cadastrar')->name('cliente.cadastrar');
     Route::get('/login', 'ClienteController@login')->name('cliente.login');
     Route::post('/logar', 'ClienteController@logar')->name('cliente.logar');
+    Route::get('/sair', 'ClienteController@sair')->name('cliente.sair')->middleware('login');
 });

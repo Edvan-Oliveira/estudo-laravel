@@ -53,7 +53,7 @@ li {
     display: inline;
 }
 
-li a, #login-cadastrar a {
+li a, #login-cadastrar a, #usuario {
     color: white; 
     font-weight: bolder;
     text-decoration: none;
@@ -77,6 +77,27 @@ nav {
     position: absolute;
     top: 112px;
     left: 150px;
+}
+
+#usuario {
+    position: static;
+    color: rgb(237, 248, 226);
+}
+
+#sairImg {
+    position: absolute;
+    top: 23px;
+    right: 50px;
+}
+
+#sair {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    color: #f15832;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 1px 0.4px black;
 }
 
 #camisas-masculinas {
@@ -112,6 +133,11 @@ h2 {
     padding: 10px;
 }
 
-section {
+section, h3 {
     text-align: center;
+    margin-top: 25px;
+}
+
+h3 {
+    margin-bottom: 10px;
 }
