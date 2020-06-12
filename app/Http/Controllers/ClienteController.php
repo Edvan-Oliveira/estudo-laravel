@@ -49,6 +49,6 @@ class ClienteController extends Controller
 
     public function sair(Request $request) {
         $request->session()->flush();
-        return redirect()->route('cliente.login');
+        return redirect()->route('home');
     }
 }
