@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Cliente;
 
 class ClienteController extends Controller
 {
@@ -22,10 +23,16 @@ class ClienteController extends Controller
             'cpf'               => 'required|max:14',
             'email'             => 'required|max:30|email',
             'telefone'          => 'required|max:16',
-            'dataNascimento'    => 'required|max:10',
+            'data_nascimento'   => 'required|max:10',
             'senha'             => 'required|max:15',
-            'senhaConf'         => 'required|same:senha'
+            'senha_conf'        => 'required|same:senha'
         ]);
+        
+        $dados = $request->except(['_token', 'senhaConf']);
+        $dados['senha'] = md5($dados['senha']);
+        
+        Cliente::create($dados);
+        session(['nome' => $dados['nome']]);
         
         return redirect()->route('home');
     }
@@ -40,10 +47,13 @@ class ClienteController extends Controller
             'senha' => 'required|max:15'
         ]);
 
-        if($request->email == 'edvan.oliveiract@gmail.com' && $request->senha == '123456'){
-            session(['nome' => 'Edvan', 'id' => 1]);
+        $cliente = Cliente::where('email', $request->email)->where('senha', md5($request->senha))->first();
+        
+        if($cliente != null){
+            session(['nome' => $cliente->nome]);
             return redirect()->route('home');
         }
+
         return redirect()->back();
     }
 

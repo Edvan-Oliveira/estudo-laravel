@@ -3,7 +3,7 @@
 @section('conteudo')
     <div class="container">
         @if(session('nome'))
-            <h3>Seja muito bem vindo {{session('nome')}}, tenha ótimas compras!</h3>
+            <h3>Seja muito bem vindo(a) {{session('nome')}}, tenha ótimas compras!</h3>
         @endif
         
         <section id="camisas-masculinas" >

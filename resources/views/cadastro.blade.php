@@ -34,11 +34,11 @@
                     <label for="email">E-mail</label><br>
                     <input type="email" id="email" name="email" placeholder="seuemail@email.com" required maxlength="30"><br>
 
-                    <label for="dataNascimento">Data de Nascimento</label><br>
-                    <input type="date" id="dataNascimento" name="dataNascimento" required maxlength="10"><br>
+                    <label for="data_nascimento">Data de Nascimento</label><br>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required maxlength="10"><br>
 
-                    <label for="senhaConf">Confirmar Senha:</label><br>
-                    <input type="password" id="senhaConf" name="senhaConf" placeholder="Repita a senha" required maxlength="15"><br>
+                    <label for="senha_conf">Confirmar Senha:</label><br>
+                    <input type="password" id="senha_conf" name="senha_conf" placeholder="Repita a senha" required maxlength="15"><br>
                 </div>
 
                 <input type="submit" value="Acessar" onclick="return validarSenha()">
