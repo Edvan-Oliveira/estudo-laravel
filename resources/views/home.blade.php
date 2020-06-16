@@ -10,46 +10,46 @@
             <h2>Destaques Masculinas</h2>
             <hr>
             <figure>
-                <img src="{{url('imagens/times/masculinas/spfc.jpg')}}" alt="camisa do spfc" height="180px">
-            <figcaption>Camisa 1 SPFC</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 1])}}"><img src="{{url('imagens/times/masculinas/spfc.jpg')}}" alt="camisa do spfc" height="180px"></a>
+                <figcaption>Camisa 1 SPFC</figcaption>
             </figure>
 
             <figure>
-                <img src="{{url('imagens/times/masculinas/juventus1.jpg')}}" alt="camisa da juventus" height="180px">
-            <figcaption>Camisa 1 Juventus</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 2])}}"><img src="{{url('imagens/times/masculinas/juventus1.jpg')}}" alt="camisa da juventus" height="180px"></a>
+                <figcaption>Camisa 1 Juventus</figcaption>
             </figure>
 
             <figure>
-                <img src="{{url('imagens/times/masculinas/psg1.jpg')}}" alt="camisa do psg" height="180px">
-            <figcaption>Camisa 1 PSG</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 3])}}"><img src="{{url('imagens/times/masculinas/psg1.jpg')}}" alt="camisa do psg" height="180px"></a>
+                <figcaption>Camisa 1 PSG</figcaption>
             </figure>
 
             <figure>
-                <img src="{{url('imagens/times/masculinas/arsenal1.jpg')}}" alt="camisa do arsenal" height="180px">
-            <figcaption>Camisa 1 Arsenal</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 4])}}"><img src="{{url('imagens/times/masculinas/arsenal1.jpg')}}" alt="camisa do arsenal" height="180px"></a>
+                <figcaption>Camisa 1 Arsenal</figcaption>
             </figure>
         </section>
         <section id="camisas-femininas">
             <h2>Destaques Femininas</h2>
             <hr>
             <figure>
-                <img src="{{url('imagens/times/femininas/spfc1.jpg')}}" alt="camisa do spfc" height="180px">
-            <figcaption>Camisa 1 SPFC</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 5])}}"><img src="{{url('imagens/times/femininas/spfc1.jpg')}}" alt="camisa do spfc" height="180px"></a>
+                <figcaption>Camisa 1 SPFC</figcaption>
             </figure>
 
             <figure>
-                <img src="{{url('imagens/times/femininas/brasil1.jpg')}}" alt="camisa do brasil" height="180px">
-            <figcaption>Camisa 1 Brasil</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 6])}}"><img src="{{url('imagens/times/femininas/brasil1.jpg')}}" alt="camisa do brasil" height="180px"></a>
+                <figcaption>Camisa 1 Brasil</figcaption>
             </figure>
 
             <figure>
-                <img src="{{url('imagens/times/femininas/psg1.jpg')}}" alt="camisa do psg" height="180px">
-            <figcaption>Camisa 1 PSG</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 7])}}"><img src="{{url('imagens/times/femininas/psg1.jpg')}}" alt="camisa do psg" height="180px"></a>
+                <figcaption>Camisa 1 PSG</figcaption>
             </figure>
 
             <figure>
-                <img src="{{url('imagens/times/femininas/barcelona1.jpg')}}" alt="camisa do barcelona" height="180px">
-            <figcaption>Camisa 1 Barcelona</figcaption>
+                <a href="{{url('produto/detalhe', ['id' => 8])}}"><img src="{{url('imagens/times/femininas/barcelona1.jpg')}}" alt="camisa do barcelona" height="180px"></a>
+                <figcaption>Camisa 1 Barcelona</figcaption>
             </figure>
         </section>
     </div>
