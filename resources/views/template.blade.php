@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="{{url('imagens/logo.png')}}" alt="logo" height="90px">
+        <a href="{{url('')}}"><img src="{{url('imagens/logo.png')}}" alt="logo" height="90px"></a>
 
             <form action="#" method="POST">
                 <input type="search" placeholder="O que procura ?">

@@ -16,7 +16,7 @@ class LoginMiddleware
 
     public function handle($request, Closure $next)
     {
-        if(!session('nome')) 
+        if(session('nome')) 
             return redirect()->route('home');
         
         return $next($request);
