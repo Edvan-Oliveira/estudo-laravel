@@ -20,11 +20,11 @@
                 <div id="login-cadastrar">
                     <a href="{{url('cliente/cadastro')}}">Cadastre-se</a>
                     <a href="{{url('cliente/login')}}">Acessar</a>
-                    <a href="#"><img id="carrinho" src="{{url('imagens/carrinho.png')}}" height="50px"></a>
+                    <a href="{{url('carrinho/exibir')}}"><img id="carrinho" src="{{url('imagens/carrinho.png')}}" height="50px"></a>
                 </div>
             @else
                 <div id="logado">
-                    <a href="#"><img id="logado-carrinho" src="{{url('imagens/carrinho.png')}}" height="50px"></a>
+                <a href="{{url('carrinho/exibir')}}"><img id="logado-carrinho" src="{{url('imagens/carrinho.png')}}" height="50px"></a>
                     <a href="{{url('cliente/sair')}}"><img id="sairImg" src="{{url('imagens/sair.png')}}" height="43px"></a>
                     <a id="sair" href="{{url('cliente/sair')}}"><i>Sair</i></a>
                 </div>

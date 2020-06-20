@@ -13,6 +13,7 @@ class ProdutoController extends Controller
         
         if($produto != null) {
             session([
+                'id'                => $produto->id,
                 'titulo'            => $produto->titulo,
                 'descricao'         => $produto->descricao,
                 'preco'             => $produto->preco,

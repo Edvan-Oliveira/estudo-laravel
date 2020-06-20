@@ -16,3 +16,9 @@ Route::group(['prefix' => '/cliente'], function () {
 Route::group(['prefix' => '/produto'], function () {
     Route::get('/detalhe/{id}', 'ProdutoController@detalhe')->name('produto.detalhe');
 });
+
+Route::group(['prefix' => '/carrinho'], function () {
+    Route::get('/exibir', 'CarrinhoController@exibir')->name('carrinho.exibir');
+    Route::get('/adicionar/{produto_id}', 'CarrinhoController@adicionar')->name('carrinho.adicionar');
+    Route::get('/remover/{id}', 'CarrinhoController@remover')->name('carrinho.remover');
+});

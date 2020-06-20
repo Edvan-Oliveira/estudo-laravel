@@ -186,3 +186,12 @@ h1 {
     font-size: 15px;
     font-weight: bolder;  
 }
+
+/*Carrinho*/
+
+.botao_remover {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(153, 153, 153);
+    margin-top: 10px;
+}
